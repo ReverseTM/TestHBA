@@ -3,6 +3,12 @@ package ru.mai.khasanov.Cards.impl;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+
+/*
+    Если пополнить счёт больше чем на пороговое значение (threshold), то на баланс также зачислятся бонусные средства в размере
+    определённого процента(percentageBonus) от пополняемой суммы
+*/
+
 public final class BonusDebitCard extends DebitCard {
     private final BigDecimal threshold;
     private final BigDecimal percentageBonus;

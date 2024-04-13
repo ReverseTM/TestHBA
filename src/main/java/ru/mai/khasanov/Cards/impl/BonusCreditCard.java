@@ -3,6 +3,11 @@ package ru.mai.khasanov.Cards.impl;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+/*
+    В данной кредитной карте устанавливается период погашения кредита(repaymentPeriod), здесь период является количеством пополнений,
+    если владелец карты восполнил кредитный баланс в течении установленного периода, то ему начислится бонусные средства(bonus)
+ */
+
 public final class BonusCreditCard extends CreditCard {
     private final int repaymentPeriod;
     private int remainingPeriod;
